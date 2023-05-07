@@ -1,0 +1,11 @@
+C:\Users\kyrdk\OneDrive\Masaüstü\C# Kodları\aley\aley\bin\Debug\aley.exe.config
+C:\Users\kyrdk\OneDrive\Masaüstü\C# Kodları\aley\aley\bin\Debug\aley.exe
+C:\Users\kyrdk\OneDrive\Masaüstü\C# Kodları\aley\aley\bin\Debug\aley.pdb
+C:\Users\kyrdk\OneDrive\Masaüstü\C# Kodları\aley\aley\obj\Debug\aley.csproj.AssemblyReference.cache
+C:\Users\kyrdk\OneDrive\Masaüstü\C# Kodları\aley\aley\obj\Debug\aley.csproj.SuggestedBindingRedirects.cache
+C:\Users\kyrdk\OneDrive\Masaüstü\C# Kodları\aley\aley\obj\Debug\aley.Form1.resources
+C:\Users\kyrdk\OneDrive\Masaüstü\C# Kodları\aley\aley\obj\Debug\aley.Properties.Resources.resources
+C:\Users\kyrdk\OneDrive\Masaüstü\C# Kodları\aley\aley\obj\Debug\aley.csproj.GenerateResource.cache
+C:\Users\kyrdk\OneDrive\Masaüstü\C# Kodları\aley\aley\obj\Debug\aley.csproj.CoreCompileInputs.cache
+C:\Users\kyrdk\OneDrive\Masaüstü\C# Kodları\aley\aley\obj\Debug\aley.exe
+C:\Users\kyrdk\OneDrive\Masaüstü\C# Kodları\aley\aley\obj\Debug\aley.pdb
