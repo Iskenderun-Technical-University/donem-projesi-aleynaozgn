@@ -99,5 +99,21 @@ namespace aley
         {
 
         }
+
+        private void button8_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void button10_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            baglan.Open();
+            SqlCommand komut=new SqlCommand("insert into ilaclar (sırano,ilackodu,ilacadı,sonkullanmatarihi,barkodno,fiyat,adet,üretimfirması,kullanmatarihi)values('"+textBox1)
+        }
     }
 }
