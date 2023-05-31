@@ -17,25 +17,26 @@ namespace aley
         {
             InitializeComponent();
         }
-        SqlConnection baglan = new SqlConnection("data source = ANYELA ; Initial Catalog = Eczane_DB;Integrated Security=true");
+        SqlConnection baglan = new SqlConnection("data source = ANYELA ; Initial Catalog = aleyna12;Integrated Security=true");
 
         private void verilerigörüntüle()
         {
             baglan.Open();
-            SqlCommand komut = new SqlCommand("select *from ilaclar", baglan);
+           SqlCommand komut = new SqlCommand("select *from aleyna12", baglan);
             SqlDataReader oku = komut.ExecuteReader();
             while(oku.Read())
             {
-                ListViewItem ekle =new ListViewItem();
-                //ekle.SubItems.Add(oku["sırano"].ToString());
+                ListViewItem ekle =new ListViewItem(oku["sırano"].ToString());
+                // ekle.SubItems.Add(oku["sırano"].ToString());
                 ekle.SubItems.Add(oku["ilackodu"].ToString());
                 ekle.SubItems.Add(oku["ilacadı"].ToString());
                 ekle.SubItems.Add(oku["sonkullanmatarihi"].ToString());
-                //ekle.SubItems.Add(oku["barkodno"].ToString());
+                ekle.SubItems.Add(oku["barkodno"].ToString());
                 ekle.SubItems.Add(oku["fiyat"].ToString());
                 ekle.SubItems.Add(oku["adet"].ToString());
                 ekle.SubItems.Add(oku["üretimfirması"].ToString());
                 ekle.SubItems.Add(oku["kullanmatalimatı"].ToString());
+                listView1.Items.Add(ekle);
 
             }
             baglan.Close();
@@ -112,8 +113,16 @@ namespace aley
 
         private void button2_Click(object sender, EventArgs e)
         {
-            baglan.Open();
-            SqlCommand komut=new SqlCommand("insert into ilaclar (sırano,ilackodu,ilacadı,sonkullanmatarihi,barkodno,fiyat,adet,üretimfirması,kullanmatarihi)values('"+textBox1)
+          baglan.Open();
+            SqlCommand komut = new SqlCommand("insert into aleyna12 (sırano,ilackodu,ilacadı,sonkullanmatarihi,barkodno,fiyat,adet,üretimfirması,kullanmatalimatı)values('"+textBox1.Text.ToString()+ "','"+textBox2.Text.ToString()+ "','"+textBox3.Text.ToString()+ "','"+textBox4.Text.ToString()+"','"+textBox5.Text.ToString()+"','"+textBox6.Text.ToString()+"','"+textBox7.Text.ToString()+"','"+textBox8.Text.ToString()+ "','"+textBox9.Text.ToString()+"'",baglan);
+            komut.ExecuteNonQuery();
+            baglan.Close();
+            verilerigörüntüle();
+        }
+
+        private void label1_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }
