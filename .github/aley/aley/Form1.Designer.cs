@@ -38,7 +38,6 @@
             this.label6 = new System.Windows.Forms.Label();
             this.label7 = new System.Windows.Forms.Label();
             this.label8 = new System.Windows.Forms.Label();
-            this.label9 = new System.Windows.Forms.Label();
             this.textBox1 = new System.Windows.Forms.TextBox();
             this.textBox2 = new System.Windows.Forms.TextBox();
             this.textBox3 = new System.Windows.Forms.TextBox();
@@ -47,7 +46,6 @@
             this.textBox6 = new System.Windows.Forms.TextBox();
             this.textBox7 = new System.Windows.Forms.TextBox();
             this.textBox8 = new System.Windows.Forms.TextBox();
-            this.textBox9 = new System.Windows.Forms.TextBox();
             this.listView1 = new System.Windows.Forms.ListView();
             this.columnHeader1 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.columnHeader2 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
@@ -58,6 +56,9 @@
             this.columnHeader7 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.columnHeader8 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.columnHeader9 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
+            this.textBox9 = new System.Windows.Forms.TextBox();
+            this.label9 = new System.Windows.Forms.Label();
+            this.button3 = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // button1
@@ -160,15 +161,6 @@
             this.label8.Text = "ÜRETİM FİRMASI";
             this.label8.Click += new System.EventHandler(this.label8_Click);
             // 
-            // label9
-            // 
-            this.label9.AutoSize = true;
-            this.label9.Location = new System.Drawing.Point(845, 535);
-            this.label9.Name = "label9";
-            this.label9.Size = new System.Drawing.Size(141, 16);
-            this.label9.TabIndex = 12;
-            this.label9.Text = "KULLANMA TALİMATI";
-            // 
             // textBox1
             // 
             this.textBox1.Location = new System.Drawing.Point(224, 482);
@@ -224,13 +216,6 @@
             this.textBox8.Name = "textBox8";
             this.textBox8.Size = new System.Drawing.Size(151, 22);
             this.textBox8.TabIndex = 21;
-            // 
-            // textBox9
-            // 
-            this.textBox9.Location = new System.Drawing.Point(1015, 535);
-            this.textBox9.Name = "textBox9";
-            this.textBox9.Size = new System.Drawing.Size(151, 22);
-            this.textBox9.TabIndex = 22;
             // 
             // listView1
             // 
@@ -288,13 +273,45 @@
             // 
             this.columnHeader9.Text = "kullanmatalimatı";
             // 
+            // textBox9
+            // 
+            this.textBox9.Location = new System.Drawing.Point(1015, 545);
+            this.textBox9.Name = "textBox9";
+            this.textBox9.Size = new System.Drawing.Size(151, 22);
+            this.textBox9.TabIndex = 24;
+            // 
+            // label9
+            // 
+            this.label9.AutoSize = true;
+            this.label9.Location = new System.Drawing.Point(845, 548);
+            this.label9.Name = "label9";
+            this.label9.Size = new System.Drawing.Size(135, 16);
+            this.label9.TabIndex = 25;
+            this.label9.Text = "KULLANIM TALİMATI";
+            // 
+            // button3
+            // 
+            this.button3.BackColor = System.Drawing.SystemColors.MenuText;
+            this.button3.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.button3.ForeColor = System.Drawing.SystemColors.Highlight;
+            this.button3.Location = new System.Drawing.Point(485, 367);
+            this.button3.Name = "button3";
+            this.button3.Size = new System.Drawing.Size(160, 49);
+            this.button3.TabIndex = 26;
+            this.button3.Text = "SİL";
+            this.button3.UseVisualStyleBackColor = false;
+            this.button3.Click += new System.EventHandler(this.button3_Click);
+            this.button3.MouseClick += new System.Windows.Forms.MouseEventHandler(this.button3_MouseClick);
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1244, 705);
-            this.Controls.Add(this.listView1);
+            this.Controls.Add(this.button3);
+            this.Controls.Add(this.label9);
             this.Controls.Add(this.textBox9);
+            this.Controls.Add(this.listView1);
             this.Controls.Add(this.textBox8);
             this.Controls.Add(this.textBox7);
             this.Controls.Add(this.textBox6);
@@ -303,7 +320,6 @@
             this.Controls.Add(this.textBox3);
             this.Controls.Add(this.textBox2);
             this.Controls.Add(this.textBox1);
-            this.Controls.Add(this.label9);
             this.Controls.Add(this.label8);
             this.Controls.Add(this.label7);
             this.Controls.Add(this.label6);
@@ -332,7 +348,6 @@
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.Label label7;
         private System.Windows.Forms.Label label8;
-        private System.Windows.Forms.Label label9;
         private System.Windows.Forms.TextBox textBox1;
         private System.Windows.Forms.TextBox textBox2;
         private System.Windows.Forms.TextBox textBox3;
@@ -341,7 +356,6 @@
         private System.Windows.Forms.TextBox textBox6;
         private System.Windows.Forms.TextBox textBox7;
         private System.Windows.Forms.TextBox textBox8;
-        private System.Windows.Forms.TextBox textBox9;
         private System.Windows.Forms.ListView listView1;
         private System.Windows.Forms.ColumnHeader columnHeader1;
         private System.Windows.Forms.ColumnHeader columnHeader2;
@@ -352,6 +366,9 @@
         private System.Windows.Forms.ColumnHeader columnHeader7;
         private System.Windows.Forms.ColumnHeader columnHeader8;
         private System.Windows.Forms.ColumnHeader columnHeader9;
+        private System.Windows.Forms.TextBox textBox9;
+        private System.Windows.Forms.Label label9;
+        private System.Windows.Forms.Button button3;
     }
 }
 
