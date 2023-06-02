@@ -59,6 +59,7 @@
             this.textBox9 = new System.Windows.Forms.TextBox();
             this.label9 = new System.Windows.Forms.Label();
             this.button3 = new System.Windows.Forms.Button();
+            this.button4 = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // button1
@@ -66,7 +67,7 @@
             this.button1.BackColor = System.Drawing.SystemColors.MenuText;
             this.button1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.button1.ForeColor = System.Drawing.SystemColors.Highlight;
-            this.button1.Location = new System.Drawing.Point(224, 367);
+            this.button1.Location = new System.Drawing.Point(175, 367);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(160, 49);
             this.button1.TabIndex = 1;
@@ -79,7 +80,7 @@
             this.button2.BackColor = System.Drawing.SystemColors.InfoText;
             this.button2.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.button2.ForeColor = System.Drawing.SystemColors.Highlight;
-            this.button2.Location = new System.Drawing.Point(740, 367);
+            this.button2.Location = new System.Drawing.Point(923, 367);
             this.button2.Name = "button2";
             this.button2.Size = new System.Drawing.Size(160, 47);
             this.button2.TabIndex = 2;
@@ -230,9 +231,9 @@
             this.columnHeader8,
             this.columnHeader9});
             this.listView1.HideSelection = false;
-            this.listView1.Location = new System.Drawing.Point(32, 12);
+            this.listView1.Location = new System.Drawing.Point(113, 12);
             this.listView1.Name = "listView1";
-            this.listView1.Size = new System.Drawing.Size(974, 334);
+            this.listView1.Size = new System.Drawing.Size(1015, 334);
             this.listView1.TabIndex = 23;
             this.listView1.UseCompatibleStateImageBehavior = false;
             this.listView1.View = System.Windows.Forms.View.Details;
@@ -240,38 +241,47 @@
             // columnHeader1
             // 
             this.columnHeader1.Text = "sırano";
+            this.columnHeader1.Width = 86;
             // 
             // columnHeader2
             // 
             this.columnHeader2.Text = "ilackodu";
+            this.columnHeader2.Width = 95;
             // 
             // columnHeader3
             // 
             this.columnHeader3.Text = "ilacadı";
+            this.columnHeader3.Width = 104;
             // 
             // columnHeader4
             // 
             this.columnHeader4.Text = "sonkullanmatarihi";
+            this.columnHeader4.Width = 142;
             // 
             // columnHeader5
             // 
             this.columnHeader5.Text = "barkodno";
+            this.columnHeader5.Width = 111;
             // 
             // columnHeader6
             // 
             this.columnHeader6.Text = "fiyat";
+            this.columnHeader6.Width = 75;
             // 
             // columnHeader7
             // 
             this.columnHeader7.Text = "adet";
+            this.columnHeader7.Width = 83;
             // 
             // columnHeader8
             // 
             this.columnHeader8.Text = "üretimfirması";
+            this.columnHeader8.Width = 123;
             // 
             // columnHeader9
             // 
             this.columnHeader9.Text = "kullanmatalimatı";
+            this.columnHeader9.Width = 127;
             // 
             // textBox9
             // 
@@ -294,7 +304,7 @@
             this.button3.BackColor = System.Drawing.SystemColors.MenuText;
             this.button3.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.button3.ForeColor = System.Drawing.SystemColors.Highlight;
-            this.button3.Location = new System.Drawing.Point(485, 367);
+            this.button3.Location = new System.Drawing.Point(421, 367);
             this.button3.Name = "button3";
             this.button3.Size = new System.Drawing.Size(160, 49);
             this.button3.TabIndex = 26;
@@ -303,11 +313,25 @@
             this.button3.Click += new System.EventHandler(this.button3_Click);
             this.button3.MouseClick += new System.Windows.Forms.MouseEventHandler(this.button3_MouseClick);
             // 
+            // button4
+            // 
+            this.button4.BackColor = System.Drawing.SystemColors.WindowText;
+            this.button4.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.button4.ForeColor = System.Drawing.SystemColors.Highlight;
+            this.button4.Location = new System.Drawing.Point(663, 367);
+            this.button4.Name = "button4";
+            this.button4.Size = new System.Drawing.Size(160, 47);
+            this.button4.TabIndex = 27;
+            this.button4.Text = "Güncelle";
+            this.button4.UseVisualStyleBackColor = false;
+            this.button4.Click += new System.EventHandler(this.button4_Click);
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1244, 705);
+            this.Controls.Add(this.button4);
             this.Controls.Add(this.button3);
             this.Controls.Add(this.label9);
             this.Controls.Add(this.textBox9);
@@ -369,6 +393,7 @@
         private System.Windows.Forms.TextBox textBox9;
         private System.Windows.Forms.Label label9;
         private System.Windows.Forms.Button button3;
+        private System.Windows.Forms.Button button4;
     }
 }
 

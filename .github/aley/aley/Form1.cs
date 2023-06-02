@@ -21,8 +21,9 @@ namespace aley
 
         private void verilerigörüntüle()
         {
+            listView1.Items.Clear();
             baglan.Open();
-           SqlCommand komut = new SqlCommand("select *from aleyna12", baglan);
+            SqlCommand komut = new SqlCommand("select *from aleyna12", baglan);
             SqlDataReader oku = komut.ExecuteReader();
             while(oku.Read())
             {
@@ -158,6 +159,16 @@ namespace aley
             textBox7.Text = listView1.SelectedItems[0].SubItems[6].Text;    
             textBox8.Text = listView1.SelectedItems[0].SubItems[7].Text;    
             textBox9.Text = listView1.SelectedItems[0].SubItems[8].Text;    
+        }
+
+        private void button4_Click(object sender, EventArgs e)
+        {
+            baglan.Open();
+            SqlCommand komut = new SqlCommand("update aleyna12 set sırano='" + textBox1.Text.ToString() + "',ilackodu'" + textBox2.Text.ToString() + "',ilacadı='" + textBox3.Text.ToString() + "',sonkullanmatarihi='" + textBox4.Text.ToString() + "'barkodno='" + textBox5.Text.ToString() + "',fiyat='" + textBox6.Text.ToString() + "',adet='" + textBox7.Text.ToString() + "',üretimfirması='" + textBox8.Text.ToString() + "',kullanmatalimatı='" + textBox9.Text.ToString() + "'where id=" + id + "", baglan);
+            komut.ExecuteNonQuery();
+            baglan.Close();
+            verilerigörüntüle();
+
         }
     }
 }
