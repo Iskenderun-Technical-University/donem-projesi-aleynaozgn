@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
             this.button1 = new System.Windows.Forms.Button();
             this.button2 = new System.Windows.Forms.Button();
             this.label1 = new System.Windows.Forms.Label();
@@ -64,7 +65,7 @@
             // 
             // button1
             // 
-            this.button1.BackColor = System.Drawing.SystemColors.MenuText;
+            this.button1.BackColor = System.Drawing.SystemColors.InactiveCaption;
             this.button1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.button1.ForeColor = System.Drawing.SystemColors.Highlight;
             this.button1.Location = new System.Drawing.Point(175, 367);
@@ -77,7 +78,7 @@
             // 
             // button2
             // 
-            this.button2.BackColor = System.Drawing.SystemColors.InfoText;
+            this.button2.BackColor = System.Drawing.SystemColors.InactiveCaption;
             this.button2.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.button2.ForeColor = System.Drawing.SystemColors.Highlight;
             this.button2.Location = new System.Drawing.Point(923, 367);
@@ -155,7 +156,7 @@
             // label8
             // 
             this.label8.AutoSize = true;
-            this.label8.Location = new System.Drawing.Point(845, 488);
+            this.label8.Location = new System.Drawing.Point(869, 491);
             this.label8.Name = "label8";
             this.label8.Size = new System.Drawing.Size(115, 16);
             this.label8.TabIndex = 11;
@@ -231,12 +232,13 @@
             this.columnHeader8,
             this.columnHeader9});
             this.listView1.HideSelection = false;
-            this.listView1.Location = new System.Drawing.Point(113, 12);
+            this.listView1.Location = new System.Drawing.Point(12, 12);
             this.listView1.Name = "listView1";
-            this.listView1.Size = new System.Drawing.Size(1015, 334);
+            this.listView1.Size = new System.Drawing.Size(1204, 334);
             this.listView1.TabIndex = 23;
             this.listView1.UseCompatibleStateImageBehavior = false;
             this.listView1.View = System.Windows.Forms.View.Details;
+            this.listView1.MouseDoubleClick += new System.Windows.Forms.MouseEventHandler(this.listView1_MouseDoubleClick);
             // 
             // columnHeader1
             // 
@@ -293,7 +295,7 @@
             // label9
             // 
             this.label9.AutoSize = true;
-            this.label9.Location = new System.Drawing.Point(845, 548);
+            this.label9.Location = new System.Drawing.Point(859, 551);
             this.label9.Name = "label9";
             this.label9.Size = new System.Drawing.Size(135, 16);
             this.label9.TabIndex = 25;
@@ -301,7 +303,7 @@
             // 
             // button3
             // 
-            this.button3.BackColor = System.Drawing.SystemColors.MenuText;
+            this.button3.BackColor = System.Drawing.SystemColors.InactiveCaption;
             this.button3.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.button3.ForeColor = System.Drawing.SystemColors.Highlight;
             this.button3.Location = new System.Drawing.Point(421, 367);
@@ -315,7 +317,7 @@
             // 
             // button4
             // 
-            this.button4.BackColor = System.Drawing.SystemColors.WindowText;
+            this.button4.BackColor = System.Drawing.SystemColors.InactiveCaption;
             this.button4.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.button4.ForeColor = System.Drawing.SystemColors.Highlight;
             this.button4.Location = new System.Drawing.Point(663, 367);
@@ -330,6 +332,8 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
+            this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(1244, 705);
             this.Controls.Add(this.button4);
             this.Controls.Add(this.button3);

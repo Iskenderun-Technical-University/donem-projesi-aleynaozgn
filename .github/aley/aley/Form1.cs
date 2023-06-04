@@ -115,7 +115,7 @@ namespace aley
         private void button2_Click(object sender, EventArgs e)
         {
           baglan.Open();
-            SqlCommand komut = new SqlCommand("insert into aleyna12(sırano,ilackodu,ilacadı,sonkullanmatarihi,barkodno,fiyat,adet,üretimfirması,kullanmatalimatı)values('"+textBox1.Text+ "','"+textBox2.Text+ "','"+textBox3.Text+ "','"+textBox4.Text+"','"+textBox5.Text+"','"+textBox6.Text+"','"+textBox7.Text+"','"+textBox8.Text+ "','"+textBox9.Text+"'", baglan);
+            SqlCommand komut = new SqlCommand("insert into aleyna12(sırano,ilackodu,ilacadı,sonkullanmatarihi,barkodno,fiyat,adet,üretimfirması,kullanmatalimatı)values('"+textBox1.Text+ "','"+textBox2.Text+ "','"+textBox3.Text+ "','"+textBox4.Text+"','"+textBox5.Text+"','"+textBox6.Text+"','"+textBox7.Text+"','"+textBox8.Text+ "','"+textBox9.Text+"')", baglan);
             komut.ExecuteNonQuery();
             baglan.Close();
             verilerigörüntüle();
@@ -140,7 +140,7 @@ namespace aley
         private void button3_Click(object sender, EventArgs e)
         {
             baglan.Open();
-            SqlCommand komut = new SqlCommand("delete from aleyna12 where id=("+id+")",baglan);
+            SqlCommand komut = new SqlCommand("delete from aleyna12 where sırano=("+id+")",baglan);
             komut.ExecuteNonQuery();
             baglan.Close();
             verilerigörüntüle();
@@ -149,25 +149,33 @@ namespace aley
 
         private void button3_MouseClick(object sender, MouseEventArgs e)
         {
-            id = int.Parse(listView1.SelectedItems[0].SubItems[0].Text);
-            textBox1.Text = listView1.SelectedItems[0].SubItems[0].Text;    
-            textBox2.Text = listView1.SelectedItems[0].SubItems[1].Text;    
-            textBox3.Text = listView1.SelectedItems[0].SubItems[2].Text;    
-            textBox4.Text = listView1.SelectedItems[0].SubItems[3].Text;    
-            textBox5.Text = listView1.SelectedItems[0].SubItems[4].Text;    
-            textBox6.Text = listView1.SelectedItems[0].SubItems[5].Text;    
-            textBox7.Text = listView1.SelectedItems[0].SubItems[6].Text;    
-            textBox8.Text = listView1.SelectedItems[0].SubItems[7].Text;    
-            textBox9.Text = listView1.SelectedItems[0].SubItems[8].Text;    
+        
         }
 
         private void button4_Click(object sender, EventArgs e)
         {
             baglan.Open();
-            SqlCommand komut = new SqlCommand("update aleyna12 set sırano='" + textBox1.Text.ToString() + "',ilackodu'" + textBox2.Text.ToString() + "',ilacadı='" + textBox3.Text.ToString() + "',sonkullanmatarihi='" + textBox4.Text.ToString() + "'barkodno='" + textBox5.Text.ToString() + "',fiyat='" + textBox6.Text.ToString() + "',adet='" + textBox7.Text.ToString() + "',üretimfirması='" + textBox8.Text.ToString() + "',kullanmatalimatı='" + textBox9.Text.ToString() + "'where id=" + id + "", baglan);
+            SqlCommand komut = new SqlCommand("update aleyna12 set sırano='" + textBox1.Text.ToString() + "',ilackodu='" + textBox2.Text.ToString() + "',ilacadı='" + textBox3.Text.ToString() + "',sonkullanmatarihi='" + textBox4.Text.ToString() + "',barkodno='" + textBox5.Text.ToString() + "',fiyat='" + textBox6.Text.ToString() + "',adet='" + textBox7.Text.ToString() + "',üretimfirması='" + textBox8.Text.ToString() + "',kullanmatalimatı='" + textBox9.Text.ToString() + "'where sırano=(" + id + ")", baglan);
             komut.ExecuteNonQuery();
             baglan.Close();
             verilerigörüntüle();
+
+        }
+
+        private void listView1_MouseDoubleClick(object sender, MouseEventArgs e)
+        {
+            id = int.Parse(listView1.SelectedItems[0].SubItems[0].Text);
+            textBox1.Text = listView1.SelectedItems[0].SubItems[0].Text;
+            textBox2.Text = listView1.SelectedItems[0].SubItems[1].Text;
+            textBox3.Text = listView1.SelectedItems[0].SubItems[2].Text;
+            textBox4.Text = listView1.SelectedItems[0].SubItems[3].Text;
+            textBox5.Text = listView1.SelectedItems[0].SubItems[4].Text;
+            textBox6.Text = listView1.SelectedItems[0].SubItems[5].Text;
+            textBox7.Text = listView1.SelectedItems[0].SubItems[6].Text;
+            textBox8.Text = listView1.SelectedItems[0].SubItems[7].Text;
+            textBox9.Text = listView1.SelectedItems[0].SubItems[8].Text;
+
+
 
         }
     }

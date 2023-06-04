@@ -53,3 +53,14 @@ C:\Users\90553\source\repos\donem-projesi-aleynaozgn\Yeni klasör (12)\.github\a
 C:\Users\90553\source\repos\donem-projesi-aleynaozgn\Yeni klasör (12)\.github\aley\aley\obj\Debug\aley.csproj.CoreCompileInputs.cache
 C:\Users\90553\source\repos\donem-projesi-aleynaozgn\Yeni klasör (12)\.github\aley\aley\obj\Debug\aley.exe
 C:\Users\90553\source\repos\donem-projesi-aleynaozgn\Yeni klasör (12)\.github\aley\aley\obj\Debug\aley.pdb
+C:\Users\90553\source\repos\donem-projesi-aleynaozgn\Yeni klasör (13)\.github\aley\aley\bin\Debug\aley.exe.config
+C:\Users\90553\source\repos\donem-projesi-aleynaozgn\Yeni klasör (13)\.github\aley\aley\bin\Debug\aley.exe
+C:\Users\90553\source\repos\donem-projesi-aleynaozgn\Yeni klasör (13)\.github\aley\aley\bin\Debug\aley.pdb
+C:\Users\90553\source\repos\donem-projesi-aleynaozgn\Yeni klasör (13)\.github\aley\aley\obj\Debug\aley.csproj.AssemblyReference.cache
+C:\Users\90553\source\repos\donem-projesi-aleynaozgn\Yeni klasör (13)\.github\aley\aley\obj\Debug\aley.csproj.SuggestedBindingRedirects.cache
+C:\Users\90553\source\repos\donem-projesi-aleynaozgn\Yeni klasör (13)\.github\aley\aley\obj\Debug\aley.Form1.resources
+C:\Users\90553\source\repos\donem-projesi-aleynaozgn\Yeni klasör (13)\.github\aley\aley\obj\Debug\aley.Properties.Resources.resources
+C:\Users\90553\source\repos\donem-projesi-aleynaozgn\Yeni klasör (13)\.github\aley\aley\obj\Debug\aley.csproj.GenerateResource.cache
+C:\Users\90553\source\repos\donem-projesi-aleynaozgn\Yeni klasör (13)\.github\aley\aley\obj\Debug\aley.csproj.CoreCompileInputs.cache
+C:\Users\90553\source\repos\donem-projesi-aleynaozgn\Yeni klasör (13)\.github\aley\aley\obj\Debug\aley.exe
+C:\Users\90553\source\repos\donem-projesi-aleynaozgn\Yeni klasör (13)\.github\aley\aley\obj\Debug\aley.pdb
